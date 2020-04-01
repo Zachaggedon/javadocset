@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		431B5B00171E6D4300868D3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431B5AFF171E6D4300868D3A /* Foundation.framework */; };
 		431B5B03171E6D4300868D3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 431B5B02171E6D4300868D3A /* main.m */; };
-		431B5B07171E6D4300868D3A /* javadocset.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 431B5B06171E6D4300868D3A /* javadocset.1 */; };
+		431B5B07171E6D4300868D3A /* javadocset.1 in Copy Files */ = {isa = PBXBuildFile; fileRef = 431B5B06171E6D4300868D3A /* javadocset.1 */; };
 		431B5B0E171E6D6F00868D3A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431B5B0D171E6D6F00868D3A /* AppKit.framework */; };
 		431B5B10171E6D7400868D3A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431B5B0F171E6D7400868D3A /* WebKit.framework */; };
 		431B5B13171E6DC300868D3A /* DHIndexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 431B5B12171E6DC300868D3A /* DHIndexer.m */; };
@@ -22,14 +22,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		431B5AFA171E6D4300868D3A /* CopyFiles */ = {
+		431B5AFA171E6D4300868D3A /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				431B5B07171E6D4300868D3A /* javadocset.1 in CopyFiles */,
+				431B5B07171E6D4300868D3A /* javadocset.1 in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -56,6 +57,15 @@
 		4381865C171FD821002D1BC6 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		43818663171FD834002D1BC6 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		43818665171FD867002D1BC6 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		9236E07C2434650C0053FCCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9236E07D2434650C0053FCCD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9236E07F2434650C0053FCCD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9236E0802434650C0053FCCD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9236E082243465130053FCCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9236E085243465130053FCCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9236E087243465130053FCCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9236E088243465130053FCCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9236E08A243465130053FCCD /* Bundle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bundle.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				431B5B01171E6D4300868D3A /* javadocset */,
+				9236E07B2434650C0053FCCD /* Bundle */,
 				431B5AFE171E6D4300868D3A /* Frameworks */,
 				431B5AFD171E6D4300868D3A /* Products */,
 			);
@@ -140,6 +151,22 @@
 			name = FMDB;
 			sourceTree = "<group>";
 		};
+		9236E07B2434650C0053FCCD /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				9236E07C2434650C0053FCCD /* AppDelegate.h */,
+				9236E07D2434650C0053FCCD /* AppDelegate.m */,
+				9236E07F2434650C0053FCCD /* ViewController.h */,
+				9236E0802434650C0053FCCD /* ViewController.m */,
+				9236E082243465130053FCCD /* Assets.xcassets */,
+				9236E084243465130053FCCD /* Main.storyboard */,
+				9236E087243465130053FCCD /* Info.plist */,
+				9236E088243465130053FCCD /* main.m */,
+				9236E08A243465130053FCCD /* Bundle.entitlements */,
+			);
+			path = Bundle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,7 +176,7 @@
 			buildPhases = (
 				431B5AF8171E6D4300868D3A /* Sources */,
 				431B5AF9171E6D4300868D3A /* Frameworks */,
-				431B5AFA171E6D4300868D3A /* CopyFiles */,
+				431B5AFA171E6D4300868D3A /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -168,13 +195,21 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Kapeli;
+				TargetAttributes = {
+					431B5AFB171E6D4300868D3A = {
+						DevelopmentTeam = T7TUTGA7X8;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 431B5AF7171E6D4300868D3A /* Build configuration list for PBXProject "javadocset" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
+				Base,
 			);
 			mainGroup = 431B5AF3171E6D4300868D3A;
 			productRefGroup = 431B5AFD171E6D4300868D3A /* Products */;
@@ -202,6 +237,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9236E084243465130053FCCD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9236E085243465130053FCCD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		431B5B08171E6D4300868D3A /* Debug */ = {
@@ -266,20 +312,30 @@
 		431B5B0B171E6D4300868D3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7TUTGA7X8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "javadocset/javadocset-Prefix.pch";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "Javadoc-Set-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		431B5B0C171E6D4300868D3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7TUTGA7X8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "javadocset/javadocset-Prefix.pch";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "Javadoc-Set-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
